@@ -10,7 +10,22 @@ library(tidyr)
 
 df <- read.csv("data/spotify_clean.csv", stringsAsFactors = FALSE)
 
-ui <- fluidPage()
+
+artists <- sort(unique(df$Artist))
+
+ui <- fluidPage(
+
+  h1("Individual Assignment: 'Chartify Simplified' in R"),
+
+  selectizeInput(
+    inputId  = "artist",
+    label    = "Select Artist to Filter by:",
+    choices  = artists,
+    selected = "Beyonce", #adding a default to showcase use
+    options  = list(placeholder = "Type & select an artist name...",
+                    allowEmptyOption = TRUE)
+  ),
+)
 
 server <- function(input, output, session) {}
 
