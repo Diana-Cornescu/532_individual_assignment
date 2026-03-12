@@ -1,12 +1,28 @@
 # 532_individual_assignment
 
+Chartify Simplified is a data analytics dashboard that leverages Spotify's song features dataset to uncover patterns and characteristics of successful songs.Built for music producers and A&R professionals, it provides insights on streams and likes metrics on a per-artist as well as cross-platform popularity.
 
-"Your repository will have a README.md file that will describe how to install packages and run your application. The About section metadata will also have a link to your deployed applicaiton."
+The main and stable deployment of this dashboard can be found here: LINK
 
+## Quick-Start Setup Instructions
+To install the required packages and run the app locally follow the instructions below:
+```
+# After opening a terminal:
+git clone https://github.com/UBC-MDS/DSCI-532_2026_Group_31_Chartify.git
+cd DSCI-532_2026_Group_31_Chartify/
 
--8: README contains no installation or run instructions.
--5: README does not describe the app's purpose.
--3: About section metadata does not link to the deployed app.
+# Optional (but suggested): make a fresh environment
+conda env create -f environment.yml
+# Activate environment
+conda activate chartify
 
+# Optional for Assistant Chat (LLM) tab:
+# Copy `.env.example` and remove ".example" to be just `.env`.
+# Add the  API key for one of the providers, save and continue the rest of the steps
 
-ADD LINK TO TOP RIGHT OF REPO
+# Run draft application locally  
+shiny run --reload --launch-browser src/app.py # → http://127.0.0.1:8050
+
+# Optional (but suggested): deactivate environment when done
+conda deactivate
+```
