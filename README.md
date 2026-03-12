@@ -2,7 +2,7 @@
 
 Chartify Simplified is a streamlined dashboard exploring a Spotify song features dataset. Any artist can be selected and filtered by using the search box to view their total streams and likes, alongside a breakdown of their songs' cross-platform popularity across Spotify and YouTube. This can be used by music enthusiast, fan, or even artists and music producers themselves.
 
-The main and stable deployment of this dashboard can be found here: LINK
+The main and stable deployment of this dashboard can be found here: https://019ce455-1d4c-424d-b90e-06727f6efd78.share.connect.posit.cloud
 
 ## Quick-Start Setup Instructions
 To install the required packages and run the app locally, follow the instructions below:
