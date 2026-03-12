@@ -27,6 +27,16 @@ ui <- fluidPage(
   ),
 )
 
-server <- function(input, output, session) {}
+server <- function(input, output, session) {
+
+  filtered <- reactive({
+    artist <- trimws(input$artist) #suggestion by claude to handel whitespace
+    if (nchar(artist) > 0) {
+      df[tolower(df$Artist) == tolower(artist),] #normalizing cases
+    } else {df}
+  })
+
+
+}
 
 shinyApp(ui, server)
