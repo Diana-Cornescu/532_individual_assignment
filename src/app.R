@@ -12,7 +12,7 @@ library(tidyr)
 # rsconnect::writeManifest(appDir = ".", appPrimaryDoc = "app.R")
 
 
-df <- read.csv("data/spotify_clean.csv", stringsAsFactors = FALSE)
+df <- read.csv("../data/spotify_clean.csv", stringsAsFactors = FALSE)
 
 
 artists <- sort(unique(df$Artist))
