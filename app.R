@@ -1,3 +1,5 @@
+# install.packages(c("shiny", "bslib", "ggplot2", "dplyr", "tidyr"))
+# shiny::runApp("app.R")
 
 library(shiny)
 library(bslib)
