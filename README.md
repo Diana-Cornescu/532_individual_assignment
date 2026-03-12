@@ -1,28 +1,24 @@
 # 532_individual_assignment
 
-Chartify Simplified is a data analytics dashboard that leverages Spotify's song features dataset to uncover patterns and characteristics of successful songs.Built for music producers and A&R professionals, it provides insights on streams and likes metrics on a per-artist as well as cross-platform popularity.
+Chartify Simplified is a streamlined dashboard exploring a Spotify song features dataset. Any artist can be selected and filtered by using the search box to view their total streams and likes, alongside a breakdown of their songs' cross-platform popularity across Spotify and YouTube. This can be used by music enthusiast, fan, or even artists and music producers themselves.
 
 The main and stable deployment of this dashboard can be found here: LINK
 
 ## Quick-Start Setup Instructions
-To install the required packages and run the app locally follow the instructions below:
+To install the required packages and run the app locally, follow the instructions below:
+1. After opening a terminal copy and paste:
 ```
-# After opening a terminal:
-git clone https://github.com/UBC-MDS/DSCI-532_2026_Group_31_Chartify.git
-cd DSCI-532_2026_Group_31_Chartify/
-
-# Optional (but suggested): make a fresh environment
-conda env create -f environment.yml
-# Activate environment
-conda activate chartify
-
-# Optional for Assistant Chat (LLM) tab:
-# Copy `.env.example` and remove ".example" to be just `.env`.
-# Add the  API key for one of the providers, save and continue the rest of the steps
-
-# Run draft application locally  
-shiny run --reload --launch-browser src/app.py # → http://127.0.0.1:8050
-
-# Optional (but suggested): deactivate environment when done
-conda deactivate
+git clone https://github.com/Diana-Cornescu/532_individual_assignment
 ```
+2. Via file explorer: navigate to the folder cloned
+3. Open the `app.R` file located within `scr` folder
+4. Double click `app.R` to open in RStudio (Presumes that this is already installed)
+5. In the R console, copy and paste:
+```
+install.packages(c("shiny", "bslib", "ggplot2", "dplyr", "tidyr"))
+```
+6. After packages are all installed, copy and paste (R console):
+```
+shiny::runApp("app.R")
+```
+7. A new Rstudio window should pop up. The dashboard can now be viewed and interacted with locally. 
